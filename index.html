@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tweet Send Component</title>
+    <!-- Poppins Font  -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap" rel="stylesheet">
+
+    <!-- Font-Awesome Links -->
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
+    <link rel="stylesheet" href="styles.css" class="rel">
+
+</head>
+
+<body>
+    <main class="container">
+        <section class="tweet_container">
+            <div class="tweet_wrap">
+                <div class="label_holder">
+                    <label for="tweet">Write your tweet</label>
+                    <!-- Update if you change the TweetMax variable in jS -->
+                    <p class="tweet_count">0/280</p>
+                </div>
+                <textarea name="tweet" class="tweet_box" cols="50" rows="10" maxlength="285"></textarea>
+                <div class="btn_tweet">
+                    <p class="error_msg">
+                        <!-- Here string will be added by js 
+                            "You can't tweet empty" -->
+                    </p>
+                    <button class="btn send">Tweet</button>
+                </div>
+            </div>
+
+            <div class="tweet_send">
+                <label for="btn">Your have tweeted sucessfully!</label>
+                <div class="btn_tweet_back">
+                    <button class="btn back" name="btn"> Go back to tweet</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <script src=" script.js"></script>
+</body>
+
+</html>
