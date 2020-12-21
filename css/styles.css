@@ -9,7 +9,6 @@ body{
     
 }
 .container{
-    /* max-width: 720px; */
     margin: auto;
     background-color: lightblue;
 }
@@ -44,7 +43,6 @@ body{
 }
 .tweet_box:focus{
     outline:none;
-    /* box-shadow:0 0 20px rgb(0,0,0,0.25); */
 }
 .btn_tweet{
     display: flex;
@@ -82,5 +80,16 @@ body{
 }
 
 .back{
-    max-width:150px;
+    max-width:200px;
+}
+
+/*Media queries*/
+@media (min-width:748px){
+    .tweet_box{
+        min-width:440px;
+    }
+    .label_holder,.btn{
+        font-size:18px;
+    }
+    
 }
